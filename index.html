@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Kaitlyn Hennessy
+     kmh319
+     CSE 264-010
+     Assignment 2 
+-->
+
+<head>
+    <title>Fifteen Puzzle</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="./puzzle.js"></script>
+</head>
+
+<body>
+    <table id="puzzle">
+        <tr>
+            <th id="a0" onclick="movePiece(this.id, this.innerHTML, false)">1</th>
+            <th id="a1" onclick="movePiece(this.id, this.innerHTML, false)">2</th>
+            <th id="a2" onclick="movePiece(this.id, this.innerHTML, false)">3</th>
+            <th id="a3" onclick="movePiece(this.id, this.innerHTML, false)">4</th>
+        </tr>
+        <tr>
+            <th id="b0" onclick="movePiece(this.id, this.innerHTML, false)">5</th>
+            <th id="b1" onclick="movePiece(this.id, this.innerHTML, false)">6</th>
+            <th id="b2" onclick="movePiece(this.id, this.innerHTML, false)">7</th>
+            <th id="b3" onclick="movePiece(this.id, this.innerHTML, false)">8</th>
+        </tr>
+        <tr>
+            <th id="c0" onclick="movePiece(this.id, this.innerHTML, false)">9</th>
+            <th id="c1" onclick="movePiece(this.id, this.innerHTML, false)">10</th>
+            <th id="c2" onclick="movePiece(this.id, this.innerHTML, false)">11</th>
+            <th id="c3" onclick="movePiece(this.id, this.innerHTML, false)">12</th>
+        </tr>
+        <tr>
+            <th id="d0" onclick="movePiece(this.id, this.innerHTML, false)">13</th>
+            <th id="d1" onclick="movePiece(this.id, this.innerHTML, false)">14</th>
+            <th id="d2" onclick="movePiece(this.id, this.innerHTML, false)">15</th>
+            <th id="d3" onclick="movePiece(this.id, this.innerHTML, false)"> </th>
+        </tr>
+    </table>
+
+    <div id="buttons">
+        <button type="button" onclick="reset()">Reset</button>
+        <br/>
+        <button type="button" style="margin-top:60px;" onclick="scramble()">Scramble</button>
+    </div>
+
+
+</body>
